@@ -9,15 +9,8 @@ package pruebafibonacci;
  *
  * @author Karen Parrao
  */
-public class PruebaFibonacci {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        Fibonacci fibonacci = new    Fibonacci();
-        
-        
-    }
+public class Fibonacci {
+    
+    
     
 }
