@@ -30,9 +30,15 @@ public class FibonacciTest {
     
     @Test (expected = NumberFormatException.class)
     public void testLetra() { 
-        int limite = Integer.parseInt("abc");
-        fibonacci.calcularFibonacci(limite);
+        fibonacci.calcularFibonacci(Integer.parseInt("abc"));
     }
+    
+    @Test
+    public void testNegativo() {
+        boolean result = fibonacci.calcularFibonacci(-1);
+        assertEquals(false, result);
+    }
+    
     
     
 }
