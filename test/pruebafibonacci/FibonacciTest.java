@@ -39,6 +39,20 @@ public class FibonacciTest {
         assertEquals(false, result);
     }
     
+    @Test
+    public void testLimite() {
+        boolean result = fibonacci.calcularFibonacci(501);
+        assertEquals(false, result);
+    }
     
-    
+    @Test
+    public void testNull() {
+         try {
+            Integer num = null;
+            fibonacci.calcularFibonacci(num);
+        }
+        catch(NullPointerException e) {
+            System.out.println("NullPointerException thrown!");
+        }
+    }
 }
