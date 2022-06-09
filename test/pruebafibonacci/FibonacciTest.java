@@ -21,11 +21,18 @@ public class FibonacciTest {
     }
 
     @Test
-    public void testValorCero() {
+    public void testCero() {
 
         boolean expResult = false;
         boolean result = fibonacci.calcularFibonacci(0);
         assertEquals(expResult, result);
     }
+    
+    @Test (expected = NumberFormatException.class)
+    public void testLetra() { 
+        int limite = Integer.parseInt("abc");
+        fibonacci.calcularFibonacci(limite);
+    }
+    
     
 }
